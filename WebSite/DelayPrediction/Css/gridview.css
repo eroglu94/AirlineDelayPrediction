@@ -1,0 +1,83 @@
+﻿
+@font-face {
+    font-family: 'helvetica neue';
+    src: url(../Font/helvetica-neue-lt-pro-45-light.otf);
+    /*src: local('☺'), url('/content/file.woff') format('woff'), url('/content/file.ttf') format('truetype');*/
+}
+
+.mydatagrid {
+    width: 1300px;
+    border: solid 2px black;
+    min-width: 80%;
+}
+
+.gridheader {
+    background-color: #646464;
+    /*background-color:#aec633;*/
+    font-family: 'helvetica neue';
+    color: White;
+    border: none 0px transparent;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.gridrows {
+    background-color: #fff;
+    font-family: 'helvetica neue';
+    font-size: 18px;
+    color: #000;
+    min-height: 25px;
+    text-align: center;
+    border: none 0px transparent;
+}
+
+    .gridrows:hover {
+        background-color: #ff8000;
+        font-family: 'helvetica neue';
+        color: #fff;
+        text-align: center;
+    }
+
+.gridselectedrow {
+    background-color: #ff8000;
+    font-family: 'helvetica neue';
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mydatagrid a /** FOR THE PAGING ICONS  **/ {
+    background-color: Transparent;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .mydatagrid a:hover /** FOR THE PAGING ICONS  HOVER STYLES**/ {
+        background-color: #000;
+        color: #fff;
+    }
+
+.mydatagrid span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/ {
+    background-color: #c9c9c9;
+    color: #000;
+    padding: 5px 5px 5px 5px;
+}
+
+.gridpager {
+    background-color: #646464;
+    font-family: 'helvetica neue';
+    color: White;
+    height: 30px;
+    text-align: left;
+}
+
+.mydatagrid td {
+    padding: 5px;
+}
+
+.mydatagrid th {
+    padding: 5px;
+}

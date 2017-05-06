@@ -1,0 +1,190 @@
+@import "bourbon";
+
+$button-height: 50px;
+$button-width: 160px;
+$button-spacing: 15px;
+$button-transition-speed: 0.25s;
+
+.button-row {
+    @include display(inline-flex);
+
+    > div {
+        position: relative;
+        width: $button-width;
+        height: $button-height;
+        margin: 0 $button-spacing;
+        @include perspective(1000px);
+
+        > a {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            @include transform-style(preserve-3d);
+            @include transform( translateZ(-($button-height / 2)) );
+            @include transition( transform $button-transition-speed );
+
+            &::before, &::after {
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                width: $button-width;
+                height: $button-height;
+                position: absolute;
+                border: 5px solid black;
+                box-sizing: border-box;
+                content: attr(title);
+                @include display(flex);
+            }
+
+            &::before {
+                background-color: #000;
+                color: #fff;
+                @include transform( rotateY(0deg) translateZ($button-height / 2) );
+            }
+
+            &::after {
+                background-color: #fff;
+                border-color: #000;
+                color: #000;
+                @include transform( rotateX(90deg) translateZ($button-height / 2) );
+            }
+
+            &:hover {
+                @include transform( translateZ(-($button-height / 2)) rotateX(-90deg) )
+            }
+        }
+    }
+}
+
+
+
+
+
+/* this is just icing */
+body {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.main, h1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include display(flex);
+}
+
+html, body, .main {
+    height: 100%;
+}
+
+
+
+
+
+
+
+/*#wrap {
+    margin: 0 auto 30px;
+}
+
+#regbar {
+    height: 67px;
+    background: #34495e;
+}
+
+#navthing {
+    margin-left: 50px;
+}
+
+h2 {
+    padding: 20px;
+    color: #ecf0f1;
+}
+
+fieldset {
+    border: none;
+}
+
+.login {
+    position: relative;
+    width: 350px;
+    display: none;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #ECF0F1;
+    left: 10%;
+    position: absolute;
+    top: -10px;
+}
+
+.formholder {
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    padding-top: 5px;
+
+    fieldset {
+    }
+
+    input[type="email"], input[type="password"] {
+        padding: 7px 5px;
+        margin: 10px 0;
+        width: 96%;
+        display: block;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 1px 1px #1abc9c;
+        }
+
+        -webkit-transition: 0.3s linear;
+        -moz-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
+        transition: 0.3s linear;
+    }
+
+    input[type="submit"] {
+        background: #1abc9c;
+        padding: 10px;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+
+        &:hover {
+            background: #1bc6a4;
+        }
+    }
+}
+
+.randompad {
+    padding: 10px;
+}
+
+.green {
+    color: #1abc9c;
+}
+
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+
+    &:hover {
+        color: #1abc9c;
+    }
+}*/

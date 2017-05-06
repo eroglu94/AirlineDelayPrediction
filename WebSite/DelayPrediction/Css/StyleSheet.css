@@ -1,0 +1,374 @@
+﻿body {
+    /*background-image: url("../img/slider-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: #9587F0;*/
+    /*background: url('../img/slider-2.png') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background-image: url("../img/slider-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-color: #9587F0;
+}
+
+@font-face {
+    font-family: 'helvetica neue';
+    src: url(../Font/helvetica-neue-lt-pro-45-light.otf);
+    /*src: local('☺'), url('/content/file.woff') format('woff'), url('/content/file.ttf') format('truetype');*/
+}
+
+@font-face {
+    font-family: 'sensations';
+    src: url('../Font/Sensations and Qualities.ttf');
+    /*src: local('☺'), url('/content/file.woff') format('woff'), url('/content/file.ttf') format('truetype');*/
+}
+
+/*Active Sayfa*/
+#HomePage .activePage {
+    color: whitesmoke;
+}
+
+#Statistics .activePage{
+    color:whitesmoke;
+}
+
+#UserPanel .activePage{
+    color:whitesmoke;
+}
+
+#header {
+    margin: 0 auto;
+    height: 80px;
+    width: 1440px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    position: relative;
+    left: 260px;
+    bottom: 50px;
+    font-family: 'helvetica neue';
+    width: 1300px;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: darkslategrey;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            /*background-color: #ddd;*/
+            color: whitesmoke;
+            transition: color 0.2s;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a:active {
+            /*background-color: green;
+            color: red;*/
+        }
+
+
+
+.accountIcon {
+    margin-top: 1.5px;
+    position: relative;
+    /*margin-left: 570px;*/
+    margin-left: 490px;
+}
+
+.account {
+    position: relative;
+    left: -25px;
+    /*text-align:center;*/
+    /*z-index: 6;*/
+}
+
+#logo {
+    /*background-color: aliceblue;*/
+    position: relative;
+    height: auto;
+    width: 253px;
+    top: 10px;
+}
+
+
+.textboxSearch {
+    background-clip: border-box;
+    width: 225px;
+    box-shadow: none;
+    font-size: 23px;
+    display: inline-block;
+    padding: 15px;
+    font-family: 'helvetica neue';
+    border-left: thin;
+    border-color: aqua;
+}
+
+    .textboxSearch:focus {
+        outline: none;
+        border-bottom: solid 5px;
+        border-bottom-color: #FFAC00;
+        border-left: thin;
+    }
+
+.dateIcon {
+    background: url(../img/calendar.png) 10px center no-repeat;
+    background-color: white;
+    padding-left: 40px;
+    width: 130px;
+}
+
+    .dateIcon::-webkit-input-placeholder {
+        padding-left: 5px;
+    }
+
+.sourceIcon {
+    background: url(../img/placeholder.png) 10px center no-repeat;
+    background-color: white;
+    padding-left: 40px;
+}
+
+.destinationIcon {
+    background: url(../img/finish-flag.png) 10px center no-repeat;
+    background-color: white;
+    padding-left: 40px;
+}
+
+.flightnumberIcon {
+    background: url(../img/airplane-ticket.png) 10px center no-repeat;
+    background-color: white;
+    padding-left: 45px;
+}
+
+.tailnumIcon {
+    background: url(../img/airplane-shape.png) 10px center no-repeat;
+    background-color: white;
+    padding-left: 42px;
+}
+
+#contents {
+    /*background-color: grey;*/
+    width: 100%;
+    height: 500px;
+}
+
+#description {
+    /*background-color:coral;*/
+    width: 100%;
+    height: 100px;
+}
+
+.h1 {
+    font-size: 100px;
+    margin-top: 20px;
+    font-family: sensations;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 50px;
+    color: #FFF97F;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+}
+
+#SearchField {
+    /*position:absolute;*/
+    /*background-color: darkcyan;*/
+    height: 400px;
+    width: 100%;
+    padding-top: 150px;
+}
+
+#prediction {
+    /*background-color: grey;*/
+    height: 150px;
+    width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*.predictButton {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    background-color: #FFAC00;
+}*/
+
+
+.predictButton {
+    margin-top: 40px;
+    background-color: #FFAC00;
+    width: 180px;
+    height: 60px;
+    font-size: 26px;
+    border: none;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    font-family: 'helvetica neue';
+    color: darkslategrey;
+}
+
+    .predictButton:hover {
+        border: none;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        /*text-shadow: 1px 1px 2px #427388;*/
+    }
+
+.saveButton {
+    /*margin-top: 40px;*/
+    background-color: #FFAC00;
+    width: 150px;
+    height: 40px;
+    font-size: 26px;
+    border: none;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    font-family: 'helvetica neue';
+    color: darkslategrey;
+    margin-left: calc(50% - 75px);
+    margin-top: 30px;
+}
+
+    .saveButton:hover {
+        border: none;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 10px;
+        /*text-shadow: 1px 1px 2px #427388;*/
+    }
+
+
+#predictionResult {
+    /*background-color: #d4f2ff;*/
+    text-align: left;
+    margin-top: 20px;
+    height: 200px;
+    line-height: 50px;
+}
+
+#TransparentWindow {
+    /*background-color: rgba(255, 211, 118, 0.50);*/
+    background-color: rgba(187, 127, 239, 0.80);
+    border-top: solid 8px;
+    border-color: #FFAC00;
+    width: 550px;
+    height: 220px;
+    margin-left: calc(50% - 285px);
+    font-family: 'helvetica neue';
+    font-size: 40px;
+    /*color: #ffc300;*/
+    color: #FFF97F;
+    padding: 10px;
+}
+
+.labelpredictionResult {
+    /*background-color: grey;*/
+    font-family: 'helvetica neue';
+    font-size: 40px;
+    color: white;
+}
+
+.justifyRight {
+    float: right;
+}
+
+
+.loginFloatDiv {
+    position: fixed;
+    /*background-color: grey;*/
+    height: 500px;
+    width: 400px;
+    left: calc(50% - 200px);
+    z-index: 5;
+    top: calc(50% - 250px);
+}
+
+.bgmask {
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(149, 135, 240, 0.70);
+    height: 100%;
+    width: 100%;
+    /*filter: blur(5px);*/
+}
+
+.hidden {
+    display: none;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+#userdata {
+    width: auto;
+    height: 400px;
+    margin-top: 100px;
+   
+}
+
+#gridLocation {
+    height:auto;
+    /*position:relative;*/
+    /*background-color: grey;*/
+    position: relative;
+    width:1200px;
+    left:calc(50% - 650px);
+}
+
+
+
+#chartContainer{
+    /*background-color:red;*/
+    height:400px;
+    margin-top:100px;
+    font-family:'helvetica neue';
+    text-align:center;
+}
+
+
+
+
+
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*padding: 1rem;*/
+    padding: 5px;
+    /*background-color: #efefef;*/
+    text-align: center;
+    font-family: 'helvetica neue';
+    color: #FFD376;
+}
